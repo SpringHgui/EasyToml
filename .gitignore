@@ -1,0 +1,7 @@
+/src/.vs
+/src/EasyToml/bin
+/src/EasyToml/obj
+/src/EasyToml.AspNetCore.Extensions/bin
+/src/EasyToml.AspNetCore.Extensions/obj
+/src/EasyToml.TestConsole/bin
+/src/EasyToml.TestConsole/obj
