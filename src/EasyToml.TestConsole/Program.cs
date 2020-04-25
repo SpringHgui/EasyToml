@@ -12,9 +12,13 @@ namespace EasyToml.TestConsole
             var conf = new ConfigurationBuilder()
               .SetBasePath(Directory.GetCurrentDirectory())
               .AddJsonFile("appsettings.json", true, true)
-              .AddTomlFile("config.json", true)
+              .AddTomlFile("config.toml", false)
               .Build();
 
+            Console.WriteLine("build complete");
+
+            var cheildren = conf.GetChildren();
+            Console.WriteLine(conf.GetChildren());
             Console.ReadLine();
         }
     }

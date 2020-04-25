@@ -14,7 +14,16 @@ namespace EasyToml.AspNetCore.Extensions
 
         private IDictionary<string, string> ParseStream(Stream input)
         {
-            throw new NotImplementedException();
+            var options = default(TomlDocumentOptions);
+            using (StreamReader streamReader = new StreamReader(input))
+            {
+                using (TomlDocument tomlDocument = TomlDocument.Parse(streamReader.ReadToEnd(), options))
+                {
+ 
+                }
+            }
+
+            return null;
         }
     }
 }
